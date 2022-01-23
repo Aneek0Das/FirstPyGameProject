@@ -22,6 +22,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 running = True
 
 white = (255, 255, 255)
+red = (255, 0, 0)
 
 while running:
     for event in pygame.event.get():
@@ -31,7 +32,7 @@ while running:
         elif event.type == QUIT:  # When user clicks on close button
             running = False
 
-    screen.fill(white)
+    screen.fill(red)
 
     # Creating new surface
     surf = pygame.Surface((150, 150))
